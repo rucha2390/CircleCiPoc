@@ -27,6 +27,5 @@ else
 	echo "4. Authenticating to Dev Hub"
 
 	# Invoke SFDX command to log in to the Dev Hub org
-	node_modules/sfdx-cli/bin/run force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile server.key --username $USERNAME --setdefaultdevhubusername -a MyTP	
+	node_modules/sfdx-cli/bin/run force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile server.key --username $USERNAME --setdefaultdevhubusername -a HubOrg	
 fi
-echo "end..."
