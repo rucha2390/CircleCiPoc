@@ -1,5 +1,5 @@
 echo "1. Reading private key..."
-if [ -z $SERVER_KEY ]
+if [ -s $SERVER_KEY ]
 then
 	echo "Private key missing..."
 	exit 1
