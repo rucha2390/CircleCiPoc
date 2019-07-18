@@ -1,4 +1,5 @@
 echo "1. Reading private key..."
+#!/bin/bash
 if [ -z $SERVER_KEY ]
 then
 	echo "Private key missing..."
@@ -27,7 +28,7 @@ else
 	echo "4. Authenticating to Dev Hub"
 
 	# Invoke SFDX command to log in to the Dev Hub org
-	node_modules/sfdx-cli/bin/run force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile server.key --username $USERNAME --setdefaultdevhubusername -a HubOrg	
+	node_modules/sfdx-cli/bin/run force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile server.key --username $USERNAME --setdefaultdevhubusername -a MyTP	
 fi
 
 
